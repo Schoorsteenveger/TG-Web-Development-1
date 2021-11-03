@@ -7,6 +7,10 @@
     <title>Formulier</title>
 </head>
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         background-color: rgb(128, 114, 96);
     }
@@ -14,9 +18,9 @@
         background-color: rgb(189, 189, 189);
         padding: 20px 20px;
         margin: 10px 10px;
-        box-sizing: border-box;
     }
-    .container-form {
+
+    .container-form, .container-form-1 {
         margin: auto;
         width: 400px;
         margin-top: 10%;
@@ -25,6 +29,10 @@
     fieldset, input, label{
         padding: 10px 10px 10px 10px;
     }
+    div {
+        display: flex;
+       align-content: flex-start;
+    }
 
 </style>
 <body>
@@ -32,19 +40,43 @@
         <form class= "formfield" method="post">
             <fieldset>
                 <legend>Persoonsgegevens</legend>
-                <label for="name">Voornaam</label>
-                <input type="text" name="name" id="Voornaam">
+                <div>
+                    <label for="name">Voornaam</label>
+                    <input type="text" name="name" id="Voornaam">
+                </div>
                 <br>
-                <label for="name">Achternaam</label>
-                <input type="text" name="name" id="Achternaam">
+                <div>
+                    <label for="name">Achternaam</label>
+                    <input type="text" name="name" id="Achternaam">
+                </div>
                 <br>
-                <label for="name">Geboortedatum</label>
-                <input type="date"name="geboortedatum" id="Geboortedatum">
+                <div>
+                    <label for="name">Geboortedatum</label>
+                    <input type="date"name="geboortedatum" id="Geboortedatum">
+                </div>
                 <br>
-                <label for="gender"></label>
-                <select name="gender" id="gender"></select>            
+                    <label for="gender">M:</label>
+                    <input type="radio" id="gender">
+                    <label for="gender">V:</label>
+                    <input type="radio" id="gender">               
+                <br>
+                <div>
+                    <label for="name">Postcode</label>
+                    <input type="text"name="postcode" id="Postcode">
+                </div>
+                <br>
+                <div>
+                    <label for="name">Adres</label>
+                    <input type="text"name="adres" id="Adres">
+                </div>              
             </fieldset>
+                <div class="flex-left">
+                    <input type="button" value="submit">
+                    <input type="reset" value="reset">
+                </div>
+            
         </form>
     </div>
+
 </body>
 </html>

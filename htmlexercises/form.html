@@ -7,25 +7,44 @@
     <title>Formulier</title>
 </head>
 <style>
+    body {
+        background-color: rgb(128, 114, 96);
+    }
     .formfield {
         background-color: rgb(189, 189, 189);
-        width: 100%;
         padding: 20px 20px;
         margin: 10px 10px;
         box-sizing: border-box;
-        border: solid ;
     }
+    .container-form {
+        margin: auto;
+        width: 400px;
+        margin-top: 10%;
+    }
+
+    fieldset, input, label{
+        padding: 10px 10px 10px 10px;
+    }
+
 </style>
 <body>
-    <form class= "formfield" method="post" style="width: 400px;">
-        <fieldset>
-            <legend>Persoonsgegevens</legend>
-            <label for="name">Voornaam</label>
-            <input type="text" name="name" id="Voornaam">
-            <br>
-            <label for="name">Achternaam</label>
-            <input type="text" name="name" id="Achternaam">
-        </fieldset>
-    </form>
+    <div class="container-form">
+        <form class= "formfield" method="post">
+            <fieldset>
+                <legend>Persoonsgegevens</legend>
+                <label for="name">Voornaam</label>
+                <input type="text" name="name" id="Voornaam">
+                <br>
+                <label for="name">Achternaam</label>
+                <input type="text" name="name" id="Achternaam">
+                <br>
+                <label for="name">Geboortedatum</label>
+                <input type="date"name="geboortedatum" id="Geboortedatum">
+                <br>
+                <label for="gender"></label>
+                <select name="gender" id="gender"></select>            
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>

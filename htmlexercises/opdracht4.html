@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 4</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(128, 114, 96);
+    }
+
+    .container-form {
+        width: 600px;
+    }
+
+    .formfield {
+        background-color: rgb(189, 189, 189);
+        padding: 20px 20px;
+        margin: 10px 10px;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <h1>Opdracht 4</h1>
+        <h2>Inputfields</h2>
+    </div>
+
+    <div class="container-form">
+        <form class="formfield" method="post">
+            <fieldset>
+                <legend>Inputfields</legend>
+                <label for="radiobutton">Radiobutton</label>
+                <input type="radio" name="radiobutton" id="radiobutton">
+                <br>
+                <label for="checkbox">Checkbox</label>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <br>
+                <label for="reset">Reset button</label>
+                <input type="reset" value="reset">
+                <br>
+                <label for="date">Set date</label>
+                <input type="date" name="date" id="date">
+                <br>
+                <label for="search">Search this site</label>
+                <input type="search" name="search" id="site-search">
+                <br>
+                <label for="time">Time</label>
+                <input type="time" name="time" id="time">
+                <br>
+                <label for="Naam">Hide input</label>
+                <input type="text" name="voornaam" id="voornaam">
+                <label for="hidden">Hide this field</label>
+                <br>
+                <label for="email">E-mail</label>
+                <input type="email" name="emailadres" id="adres">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

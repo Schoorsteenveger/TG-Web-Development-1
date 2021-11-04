@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgb(172, 172, 172);
+    color: azure;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p, li {
+     font-size: 1.5rem;
+}
+
+.antwoorden, .opdracht-1 {
+    width: 600px;
+    height: auto;
+    margin: auto;
+}

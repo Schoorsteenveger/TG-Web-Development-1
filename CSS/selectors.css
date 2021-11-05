@@ -1,0 +1,47 @@
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); 
+    box-sizing: border-box;     
+}
+
+.child-selector {
+    background-color: rgb(165, 165, 165);
+    padding:auto; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin: 0;
+}
+
+/* Child selector example */
+.child-selector section p, h1, h2{
+    background-color: rgba(116, 116, 116, 0.762);
+    width:100%;
+    padding: 20px;
+    display: flex;
+    flex: 1;
+}
+
+.child-selector p {
+    margin: 0;
+    background-color: rgb(177, 177, 177);
+    padding: 20px;
+    flex: 1;
+}
+
+.child-selector .hi h1, h2{
+    background-color: violet;
+    margin: 0;
+}
+
+/* Adjacent selectors */
+
+
+
+
+/* General selectors */

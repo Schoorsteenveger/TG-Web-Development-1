@@ -24,3 +24,7 @@ p, li {
     height: auto;
     margin: auto;
 }
+
+div.antwoorden b {
+    color:brown;
+}

@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Adjacent selector</title>
     <link rel="stylesheet" href="/CSS/selectors.css">
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <h2>Adjecent sibling selector</h2>
+        <div>
+            <p>The adjacent sibling combinator (+) separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element.</p>
+            <p>For example easy to use in a menu list when you want to give each link a different color. </p>
+        </div>
+
+        <div>
+            <p>Text in div</p>
+            <p>Text in div</p>
+        </div>
+        <p>Text outside div, but after div.</p>
+        <p>Text outside div, but after div.</p>
+        <div>
+            <p>Text in div.</p>
+            <p>Text in div.</p>
+        </div>
+        <p>Text outside div, but after div.</p>
+        <p>Text outside div, but after div.</p>
+    </div>
+
 </body>
+
 </html>

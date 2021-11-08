@@ -27,14 +27,14 @@ body {
     flex: 1;
 }
 
-.child-selector p {
+.child-selector  p {
     margin: 0;
     background-color: rgb(177, 177, 177);
     padding: 20px;
     flex: 1;
 }
 
-.child-selector .hi h1, h2{
+.child-selector > .hi > h1, h2{
     background-color: violet;
     margin: 0;
 }

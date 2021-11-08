@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 8 cascading & inheritance</title>
+</head>
+<style>
+    body {
+        background-color: hotpink;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+    /* Cascading voorbeeld */
+    h2{
+        color: tomato;
+    }
+
+    h2 {
+        color: yellow;
+    }
+
+    h2 { 
+        color: blue;
+    }
+    p { 
+        font-size: 1.4rem;
+    }
+    /* Inherintance voorbeeld */
+    .inheritance-ex {
+        font-weight: 500;
+        font-size: 1.5rem; 
+    }
+
+    span {
+        color: rgb(255, 111, 0); 
+        font-family:'Times New Roman', Times, serif;
+        font-size: 2.5rem;     
+    }
+
+    .wrapper {
+        width: 800px;
+        background-color: thistle;
+        padding: 20px;
+    }
+
+</style>
+<body>
+    <div class="wrapper">
+        <div><h1>Cascading & Inheritance</h1>
+            <h2>Examples</h2>
+            <p>Omdat ik in de body, het parent element, de font kleur op wit heb gezet, krijgen (erven) 
+            alle child elementen ook de kleur wit.</p>
+        </div>
+    
+        <div class="cascading-ex">
+            <h2>Voorbeeld 1</h2>
+            <p>Topdown. De regel geldt dat elke laatste regel css die je schrijft geldt. In de styling hebik de h1 steeds van kleur veranderd. De laatste kleur wordt gelezen.</p>
+        </div>
+    
+        <div class="inheritance-ex">
+            <h2>Voorbeeld 2</h2>
+            <p><span>Gekleurd m.b.v. span</span> binnen de paragraaf.</p>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>

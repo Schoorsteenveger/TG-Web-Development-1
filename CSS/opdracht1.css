@@ -59,8 +59,12 @@ div.antwoorden b, span {
     margin: 0 auto;
 }
 
-#p-inline {
+#p-inline, #p-inline-1 {
     margin: 0 auto;
+    line-height: 50px;
 } 
 
-
+span {
+    width: 500px;
+    height: 50px;
+}

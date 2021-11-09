@@ -52,5 +52,15 @@ div.antwoorden b, span {
     color: green;
 }
 
+/* Block element naar volgende regel */
+.block-box, div {
+    width: 800px;
+    background-color: brown;
+    margin: 0 auto;
+}
+
+#p-inline {
+    margin: 0 auto;
+} 
 
 

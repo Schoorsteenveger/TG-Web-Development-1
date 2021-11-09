@@ -25,7 +25,7 @@ p, li {
     margin: auto;
 }
 
-div.antwoorden b {
+div.antwoorden b, span {
     color:brown;
 }
 

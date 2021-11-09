@@ -25,6 +25,10 @@ p, li {
     margin: auto;
 }
 
+.antwoorden h3, h2, .opdracht-1 h1 {
+    color: black;
+}
+
 div.antwoorden b, span {
     color:brown;
 }

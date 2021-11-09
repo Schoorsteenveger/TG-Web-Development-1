@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div & positioning</title>
+    <link rel="stylesheet" href="/CSS/opdracht1.css">
+</head>
+<style>
+    .outer-div {
+        background-color: orange;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+        top: 500px;
+        z-index: 3;
+    }
+
+    .inner-div {
+        background-color: rgb(0, 255, 72);
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        z-index: 4;
+        position: relative;
+        top: 425px;
+    }
+
+</style>
+<body>
+    <div class="outer-div">
+    </div>
+    <div class="inner-div"></div>
+</body>
+</html>

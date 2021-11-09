@@ -68,3 +68,11 @@ span {
     width: 500px;
     height: 50px;
 }
+
+/* Opdracht 5 Padding */
+.box-padding {
+    padding: 30px;
+    background-color: chocolate;
+    border: solid  cornflowerblue 5px;
+    margin: 70px -100px;
+}

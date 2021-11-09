@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ne">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodel opdracht 1</title>
+    <link rel="stylesheet" href="/CSS/opdracht1.css">
+</head>
+
+<body>
+    <div class="opdracht-1">
+        <h1>Boxmodel opdracht 1</h1>
+        <h2>Wat zijn de eigenschappen van block boxes en inline boxes?
+    </div>
+
+    <div class="antwoorden">
+        <h3>Verschil inline en block</h3>
+        <p>Elk HTML element heeft een van de drie eigenschappen: block, inline, of niet-weergegeven.</p>
+        <p>In tegenstelling tot het block-element, onderbreekt een inline-element niet de invoer van tekst met
+            plotselinge overgang naar een nieuwe regel.
+            Een inline-element pakt precies genoeg horizontale ruimte om zijn inhoud weer te geven.
+            Meerdere inline-elementen kunnen worden weergegeven worden op de regel, totdat deze vol is.
+            Denk aan een regel met daarin een soan tag. Dat iseen inline element.
+        </p>
+        <p>Ezelsbrug is om aan een inline-element te denken als een zin of een zinsdeel, en aan een block-element als
+            een alinea. Een zin of zinsdeel kan samen met andere zinnen een alinea vormen, maar een alinea staat apart,
+            afgescheiden door lege regels.
+        </p>
+        <p>
+            Een <span>block element</span> daarentegen neemt de hele regel in beslag en schuift eenelemnt door naar de
+            volgende regel.
+        </p>
+        <h2>Breedtes, hoogtes en kantlijnen van inline-elementen</h2>
+        <p>Inline-elementen worden niet beïnvloed door de CSS properties: width/height (breedte/hoogte); die properties
+            zijn bedoeld voor block-elementen. De width en height properties worden genegeerd voor inline elementen. In
+            plaats daarvan kan je de regelafstand tussen inline elementen declareren met de CSS property "line-height".
+        </p>
+        <p>De margin (kantlijn) en padding (opvulling) properties werken anders voor inline- dan voor block-elementen.
+            In het algemeen is het beter om block-elementen te gebruiken als je lege ruimte tussen elementen wil
+            creëren. Als je lege ruimte tussen elementen op één en dezelfde regel wil, dan zijn floating (drijvende)
+            block-elementen een keuze ( float: right, float:left).</p>
+
+    </div>
+
+</body>
+
+</html>

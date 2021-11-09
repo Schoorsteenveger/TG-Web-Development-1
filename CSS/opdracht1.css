@@ -114,3 +114,38 @@ margin: 0 auto;
 .blok-8 p {
     font-size: 1rem;
 }
+
+/* Opdracht 9 Blokken */
+
+.container-box-1 {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    background-color: darkorange;
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.blok-9 {
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    margin: 15px;
+    padding: 15px;
+    border-width: 5px;
+    border-style: solid;
+    background-color: rgb(169, 169, 169);   
+}
+
+.blok-10 {
+    flex:auto;
+    background-color: darkseagreen;
+    border-width: 10px;
+    border-style:inset;
+    padding: 30px 15px;
+}
+
+.blok-11 {
+    
+}

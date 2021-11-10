@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 4</title>
+</head>
+<style>
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .button {
+        box-sizing: border-box;
+        display: flex;  
+        justify-content: center;
+        align-content: center;
+        background-color: rosybrown;
+        align-items: center;
+        width: 600px;
+        height: 80px;
+        background-color: rgb(40, 120, 189);
+        position: relative;
+        top: 200px;
+        font-size: 2rem;
+        font-family:Arial, Helvetica, sans-serif; 
+        text-align: center;      
+    }
+
+    .left-right-horizontal::before {
+        content: "";
+        position: absolute;
+        background-color: rgb(225, 161, 65);
+        width: 50px;
+        height: 5px;
+        border-color: rgb(225, 161, 65);
+        border-style: solid;
+        top: 0;
+        left: 0;
+    }
+
+    .left-right-horizontal::after {
+        content: "";
+        position: absolute;
+        background-color: rgb(225, 161, 65);
+        width: 50px;
+        height: 6px;
+        border-color: rgb(225, 161, 65);
+        border-style: solid;
+        bottom: 0;
+        right: 0;
+    }
+
+    .left-right-vertical::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(225, 161, 65);
+    border-color: rgb(225, 161, 65);
+    border-style: solid;
+    width: 7px;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+}
+
+    .left-right-vertical::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(225, 161, 65);
+    border-color: rgb(225, 161, 65);
+    border-style: solid;
+    width: 7px;
+    height: 73px;
+    bottom: 0;
+    right: 0;
+}
+
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="button">
+            <h3 class=" left-right-vertical"></h3>
+            <h3 class=" left-right-horizontal"></h3>
+            <h2>Button</h2>
+        </div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elementen</title>
+    <link rel="stylesheet" href="/CSS/opdracht1.css">
+</head>
+
+<style>
+    .antwoorden li::before {
+        content: "♥";
+    }
+
+    ol li {
+        padding-left: 5px;
+    }
+
+    li::after {
+        content: "#";
+    }
+
+    ol li::marker {
+        color: rgb(0, 0, 0);
+        font-size: 1.5em;
+    }
+
+    .firstline p::first-line {
+        color: rgb(46, 50, 189);
+    }
+
+    p::first-letter {
+        font-size: 130%;
+        text-transform: capitalize;
+    }
+
+    ::selection {
+        background-color: cyan;
+        color: red;
+        background: yellow;
+    }
+
+</style>
+
+<body>
+
+    <div class="opdracht-1">
+        <h1>Pseudo elementen</h1>
+        <h2>14 verschillende pseudo elementen</h2>
+        <p>Een CSS-pseudo-element is een trefwoord dat aan een selector is toegevoegd en waarmee u een specifiek deel
+            van het/de geselecteerde element(en) kunt opmaken. Bijvoorbeeld</p>
+
+        <ol>
+            <li>::before</li>
+            <li>::after</li>
+            <li>::first-line</li>
+            <li>::marker</li>
+            <li>::backdrop</li>
+            <li>::cue-region</li>
+            <li>::cue</li>
+            <li>::first-letter</li>
+            <li>::selection</li>
+            <li>::placeholder </li>
+            <li>::slotted(*)</li>
+            <li>::target-text</li>
+            <li>::grammar-error</li>
+
+        </ol>
+        <br>
+        <p>Maak van de bovengenoemde pseudo elementen voorbeelden. Geef in je antwoord ook aan wat de voordelen zijn van
+            elke selector.
+        </p>
+    </div>
+
+    <div class="antwoorden">
+        <h3>::before (:before)</h3>
+        <li>In CSS maakt ::before een pseudo-element dat het <span>eerste onderliggende element</span> is van het
+            geselecteerde
+            element. Het wordt vaak gebruikt om cosmetische inhoud toe te voegen aan een element met de eigenschap
+            content. Het is standaard inline.</li>
+
+        <br>
+        <h3>::after (:after)</h3>
+        <div class=" :after ">
+            <li>In CSS, ::after creëert een pseudo-element dat <span>het laatste kind is van het geselecteerde
+                    element</span>. Het wordt
+                vaak gebruikt om cosmetische inhoud toe te voegen aan een element met de eigenschap content. Het is
+                standaard inline.</li>
+        </div>
+
+        <br>
+        <h3>::marker</h3>
+        <p>Het ::marker CSS pseudo-element <span> selecteert het markeringsvak van een lijstitem</span> selecteert het
+            markeringsvak van een lijstitem, dat doorgaans een
+            opsommingsteken of nummer bevat. Het werkt op elk element of pseudo-element dat is ingesteld om weer te
+            geven: lijstitem, zoals de (li).
+        </p>
+        <div class="firstline">
+            <h3>::firstline</h3>
+            <p>Het ::first-line CSS pseudo-element past stijlen toe op de eerste regel van een block-level element. Merk
+                op
+                dat de lengte van de eerste regel van veel factoren afhangt, waaronder de breedte van het element, de
+                breedte van het document en de lettergrootte van de tekst.
+            </p>
+        </div>
+
+        <div class="::backdrop">
+            <h3>::backdrop</h3>
+            <p>The ::backdrop CSS pseudo-element is a box the size of the viewport which is rendered immediately beneath
+                any element being presented in full-screen mode. This includes both elements which have been placed in
+                full-screen mode using the Fullscreen API and elements.
+                When multiple elements have been placed into full-screen mode, the backdrop is drawn immediately
+                beneath the frontmost such element, and on top of the older full-screen elements.
+            </p>
+        </div>
+
+        <div class="::cue-region">
+            <h3>::cue-region</h3>
+            <p>Het ::cue-regio CSS pseudo-element komt overeen met WebVTT-cues binnen een geselecteerd element. Dit kan
+                worden gebruikt om bijschriften en andere aanwijzingen in media met VTT-tracks te stylen.
+            </p>
+            <p>De eigenschappen worden toegepast op de hele reeks cues alsof ze een enkele eenheid zijn. De enige
+                uitzondering is dat de achtergrond en zijn longhand-eigenschappen van toepassing zijn op elke cue
+                afzonderlijk, om te voorkomen dat er boxen worden gemaakt en onverwacht grote delen van de media worden
+                verdoezeld. </p>
+        </div>
+
+        <div class="::first-letter">
+            <h3>::first-letter</h3>
+            <p>Het ::first-letter CSS-pseudo-element past stijlen toe op de eerste letter van de eerste regel van een
+                element op blokniveau, maar alleen wanneer deze niet wordt voorafgegaan door andere inhoud (zoals
+                afbeeldingen of inline-tabellen).
+            </p>
+        </div>
+
+        <div class="bg-selection">
+            <h3>::selection</h3>
+            <p>Het ::selection CSS-pseudo-element past stijlen toe op het deel van een document dat door de gebruiker is
+                gemarkeerd (zoals klikken en slepen met de muis over tekst).
+            </p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

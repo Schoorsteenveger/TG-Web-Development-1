@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 7</title>
+</head>
+<style>
+    .wrapper {
+        margin: 20% 500px;
+    }
+
+    .vierkant {
+        height: 300px;
+        width: 300px;   
+        background-color: crimson;
+        -webkit-transform: rotate(30deg);
+        transform: rotate(20deg);
+        position: relative;
+        
+    }
+
+    .vierkant::before {
+        content: "";
+        height: 300px;
+        width: 300px; 
+        position: absolute;
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+
+    .vierkant::after {
+        content: "";
+        height: 300px;
+        width: 300px; 
+        position: relative;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(30deg);
+    }
+
+    
+
+</style>
+<body>
+    <div class="wrapper">
+        <div class="vierkant"></div>
+    </div>
+</body>
+</html>

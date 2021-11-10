@@ -42,6 +42,34 @@
         background: yellow;
     }
 
+    input::placeholder {
+        color: rgb(46, 50, 189);
+        font-size: 6rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+        padding-right: 10px;
+    }
+
+    .placeholder {
+        padding: 15px 40px;
+    }
+
+    p:slotted(*) {
+        font-weight: bold;
+    }
+
+    ::target-text {
+        background-color: rgb(203, 255, 192);
+    }
+
+    ::grammar-error  {
+        text-decoration: underline rgb(0, 255, 38);
+        color: rgb(0, 255, 0);
+    }
+
+
 </style>
 
 <body>
@@ -62,8 +90,8 @@
             <li>::cue</li>
             <li>::first-letter</li>
             <li>::selection</li>
-            <li>::placeholder </li>
-            <li>::slotted(*)</li>
+            <li>::placeholder</li>
+            <li>::slotted()</li>
             <li>::target-text</li>
             <li>::grammar-error</li>
 
@@ -138,10 +166,44 @@
         <div class="bg-selection">
             <h3>::selection</h3>
             <p>Het ::selection CSS-pseudo-element past stijlen toe op het deel van een document dat door de gebruiker is
-                gemarkeerd (zoals klikken en slepen met de muis over tekst).
+                gemarkeerd. Als je met de muis over de tekst in de pagina trekt, zie je de achtergrondkleur verschijnen.
             </p>
         </div>
 
+        <div class="::placeholder">
+            <h3>::placeholder</h3>
+            <p>The ::placeholder CSS pseudo-element vertegenwoordigt de placeholder-tekst in een input of textarea
+                element.
+            </p>
+            <label for="placeholder">Invulveld</label>
+            <input type="placeholder" name="placeholder" class="placeholder">
+            <p slot="person-name">Naam mist</p>
+        </div>
+
+        <div class="::slotted">
+            <h3>::slotted()</h3>
+            <p>Het ::slotted() CSS-pseudo-element vertegenwoordigt elk element dat in een slot in een HTML-sjabloon is
+                geplaatst (zie Sjablonen en slots gebruiken voor meer informatie).
+                Dit werkt alleen bij gebruik in CSS die in een schaduw-DOM is geplaatst. Merk ook op dat deze selector
+                geen tekstknooppunt selecteert dat in een slot is geplaatst; het richt zich alleen op daadwerkelijke
+                elementen.
+            </p>
+        </div>
+
+        <div class="::target-text">
+            <h3>::target-text</h3>
+            <p>Het ::target-text CSS-pseudo-element vertegenwoordigt de tekst waarnaar is gescrolld als de browser
+                scroll-naar-tekstfragmenten ondersteunt. Hiermee kunnen auteurs kiezen hoe ze dat gedeelte van de tekst
+                willen markeren.
+            </p>
+        </div>
+
+        <div class="::grammar-error">
+            <h3>::grammar-error</h3>
+            <p>Het ::grammar-error CSS-pseudo-element vertegenwoordigt een tekstsegment dat door de user-agent is gemarkeerd als grammaticaal onjuist.
+                Wellicht niet ondersteund door elke browser.
+            </p>
+        </div>
 
     </div>
 

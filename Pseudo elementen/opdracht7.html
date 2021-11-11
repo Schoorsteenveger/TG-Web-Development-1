@@ -7,15 +7,17 @@
     <title>Opdracht 7</title>
 </head>
 <style>
-    .wrapper {
-        margin: 20% 500px;
-    }
 
+    .container {
+       display: grid;
+       place-content: center;;
+       margin: 20vw auto;
+    }
+    
     .vierkant {
         height: 300px;
         width: 300px;   
         background-color: crimson;
-        -webkit-transform: rotate(30deg);
         transform: rotate(20deg);
         position: relative;
         
@@ -25,9 +27,9 @@
         content: "";
         height: 300px;
         width: 300px; 
-        position: absolute;
-        -webkit-transform: rotate(30deg);
-        transform: rotate(30deg);
+        position: absolute;     
+        transform: rotate(45deg);
+        background-color: crimson;
     }
 
     .vierkant::after {
@@ -35,16 +37,18 @@
         height: 300px;
         width: 300px; 
         position: relative;
-        transform: rotate(45deg);
-        -webkit-transform: rotate(30deg);
+        transform: rotate(65deg);       
     }
 
     
 
 </style>
 <body>
-    <div class="wrapper">
-        <div class="vierkant"></div>
+    <div class="container">
+        <div class="vierkant">
+            <div class="vierkant"></div>
+        </div>
     </div>
+    
 </body>
 </html>

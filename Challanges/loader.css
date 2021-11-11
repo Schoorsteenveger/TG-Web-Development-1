@@ -1,3 +1,12 @@
+/* challenge met Janou en Miki*/
+.container {
+    margin: 300px auto;
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container div {
     background-color: rgb(176, 45, 160);
     height: 40px;
@@ -6,39 +15,19 @@
     margin: 5px;
     display: inline-block;
     position: relative;
-    z-index: 0;
-   
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
-
-.container {
-    margin: 500px auto;
-    height: 500px;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #one {
-    animation-name: grow;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-delay: 0s;
 }
-
 #two {
-    animation-name: grow;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
     animation-delay: 0.5s;
 }
-
 #three {
-    animation-name: grow;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
     animation-delay: 1s;
 }
-
 @keyframes grow {
     0% {
         height: 40px;
@@ -48,7 +37,6 @@
         height: 20px;
         width: 20px;
     }
-
     100% {
         height: 40px;
         width: 40px;

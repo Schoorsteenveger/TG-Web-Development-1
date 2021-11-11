@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 3</title>
+</head>
+<style>
+
+/* justify-content naar flex-end gezet */
+
+.container {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: burlywood;
+        padding: 0.5rem;
+    }
+    
+    .flex-box {
+        display: flex;
+        background-color: cadetblue;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 11%;
+        margin: 8px;
+        text-align: center;
+    }
+
+    .flex-box::before {
+        content: "";
+        display: flex;
+        padding-top: 25%;      
+    }
+
+   .grow-1 {
+        flex-grow: 1;
+    }
+        
+</style>
+<body>
+    <div class="container">
+        <div class="flex-box"><p>1</p></div>
+        <div class="flex-box grow-1"><p>2</p></div>
+        <div class="flex-box"><p>3</p></div>
+        <div class="flex-box"><p>4</p></div>
+        <div class="flex-box"><p>5</p></div>
+        <div class="flex-box"><p>6</p></div>
+    </div>
+</body>
+</html>

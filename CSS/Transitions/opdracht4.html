@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 4</title>
+</head>
+<style>
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 20vw auto;
+    }
+
+    .container {
+        display: flex;
+        justify-content: start;
+        width: 1000px;
+        height: 500px;
+        background-color: white;
+        border: solid 2px black;
+        position: relative;
+    }
+
+    .an-1,
+    .an-2,
+    .an-3 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        border: solid 2px black;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    /* Animation an-1*/
+
+    .an-1 {
+        animation-name: an-1;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes an-1 {
+        0% {
+            border: solid 2px black;
+            right: 0;
+            top: 0;
+        }
+
+        50% {           
+            top: 50%; 
+            right: 50%;
+            
+        }
+
+        100% {
+            right: 0;
+            top: 0;
+        }
+    }
+
+    /* Animation an-2*/
+
+    .an-2 {
+        animation-name: an-2;
+        animation-duration: 4s;
+        animation-delay: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes an-2 {
+        0% {
+            border: solid 2px black;
+            left: 0;
+            top: 0;
+        }
+
+        50% {           
+            top: 50%; 
+            left: 50%;
+            
+        }
+
+        100% {
+            left: 0;
+            top: 0;
+        }
+    }
+    .an-3 {
+        animation-name: an-3;
+        animation-duration: 2s;
+        animation-delay: 5s;
+        animation-iteration-count: infinite;
+        transition: transform s cubic-bezier(0.33, 0.21, 1, 1);
+        
+
+    }
+
+    @keyframes an-3 {
+        0% {
+            left: 0;
+            bottom: 0;           
+        }
+
+        25% {
+            left: 50%;
+            bottom: 0;          
+        }
+
+        75% {
+            left: 50%;
+            bottom: 50%;
+        }
+                   
+        100% {
+            left:0;
+            bottom:50%;
+        }
+    }
+
+   
+
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="an-1"></div>
+            <div class="an-2"></div>
+            <div class="an-3"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 3</title>
+</head>
+<style>
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 20vw auto;
+    }
+
+    .container {
+        display: flex;
+        justify-content: start;
+        width: 1000px;
+        height: 500px;
+        background-color: white;
+        border: solid 2px black;
+        position: relative;
+    }
+
+    .an-1,
+    .an-2,
+    .an-3,
+    .an-4,
+    .an-5 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        border: solid 2px black;
+
+    }
+
+    /* Animation an-1*/
+
+    .an-1 {
+        animation-name: an-1;
+        animation-duration: 4s;
+        animation-delay: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes an-1 {
+        0% {
+            background-color: rgba(255, 0, 0, 0);
+            border: solid 2px black;
+            left: 0px;
+            top: 0;
+            border-radius:0% 0% 0% 0%;
+        }
+
+        50% {
+            background-color: rgb(255, 0, 0);
+            left: 900px;
+            top: 0;
+            border-radius: 50% 50% 50% 50%;
+        }
+
+        100% {
+            background-color: rgb(255, 0, 0);
+            left: 900px;
+            top: 0;
+            border-radius: 100% 100% 100% 100%;
+        }
+    }
+
+    /* Animation an-2*/
+
+    .an-2 {
+        animation-name: an-2;
+        animation-duration: 4s;
+        animation-delay: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes an-2 {
+        0% {
+            background-color: rgba(255, 0, 0, 0);
+            left: 0;
+            top: 100px;
+            border-radius: 0% 0% 0% 0%;
+        }
+
+        100% {
+            background-color: rgb(255, 0, 0);
+            left: 900px;
+            top: 100px;
+            border-radius: 7% 7% 7% 7%;
+        }
+    }
+
+    .an-3 {
+        animation-name: an-3;
+        animation-duration: 3s;
+        animation-delay: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes an-3 {
+        0% {
+            background-color: rgba(255, 0, 0, 0);
+            left: 0;
+            top: 200px;           
+        }
+
+        100% {
+            background-color: rgb(255, 0, 0);
+            left: 900px;
+            top: 200px;
+        }
+    }
+
+    .an-4 {
+        animation-name: an-4;
+        animation-duration: 6s;
+        animation-delay: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes an-4 {
+        0% {
+            background-color: rgba(255, 0, 0, 0);
+            left: 0;
+            top: 300px;           
+        }
+
+        100% {
+            background-color: rgb(255, 0, 0);
+            left: 900px;
+            top: 300px;
+        }
+    }
+
+    .an-5 {
+        animation-name: an-5;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes an-5 {
+        0% {
+            background-color: rgba(255, 0, 0, 0);
+            left: 0;
+            top: 400px;           
+        }
+        25% {
+            background-color: rgba(255, 0, 0, 0);
+            left: 200px;
+            top: 400px;           
+        }
+
+        100% {
+            background-color: rgb(255, 0, 0);
+            left: 700px;
+            top: 400px;
+        }
+        
+        100% {
+            background-color: rgb(255, 0, 0);
+            left: 900px;
+            top: 400px;
+        }
+    }
+
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="an-1"></div>
+            <div class="an-2"></div>
+            <div class="an-3"></div>
+            <div class="an-4"></div>
+            <div class="an-5"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

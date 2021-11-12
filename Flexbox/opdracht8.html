@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 8</title>
+</head>
+<style>
+
+    .wrapper {
+        display: block;
+        margin: 500px 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tiles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border: solid black 3px;
+        border-radius: 5%;
+        width: 100px;
+        height: 100px;
+        position: relative;     
+    }
+
+    .tile-1 {
+        background-color: blanchedalmond;
+    }
+
+    .tile-2 {
+        background-color: cornflowerblue;
+    }
+
+    .tile-3 {
+        background-color: rgb(148, 189, 107);
+    }
+
+    .tile-4 {
+        background-color: white;
+    }
+
+    .tile-5 {
+        background-color: black;
+        color: white;
+    }
+
+    .tile-6 {        
+        position: relative;
+        background-color:white;
+    }
+
+    .tile-6::before{
+        content: '6';       
+        position: absolute;
+        display: flex;  
+        justify-content: center;
+        align-items: center; 
+        left:0;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        background-image: linear-gradient(90deg, rgb(52, 141, 209) 0%, rgb(130, 223, 116) 100%);
+        text-align: center;
+    }
+
+</style>
+
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="tiles tile-1"><p>1</p></div>
+            <div class="tiles tile-2">2</div>
+            <div class="tiles tile-3">3</div>
+        </div>
+        <div class="container">
+            <div class="tiles tile-4">4</div>
+            <div class="tiles tile-5">5</div>
+            <div class="tiles tile-6">6</div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

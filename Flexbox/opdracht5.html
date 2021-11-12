@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 5</title>
+</head>
+<style>
+    /* justify-content naar flex-end gezet */
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: burlywood;
+        padding: 0.5rem;
+    }
+
+    .flex-box {
+        display: flex;
+        background-color: cadetblue;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 11%;
+        margin: 8px;
+        text-align: center;
+    }
+
+    .flex-box::before {
+        content: "";
+        display: flex;
+        padding-top: 25%;
+    }
+
+    .grow-1 {
+        flex-grow: 1;
+    }
+    .text-0 {
+        align-items: flex-start;
+    }
+    .text-1 {
+        align-items: flex-end;
+    }
+
+    .text-2 {
+        align-items: stretch;
+    }
+
+    .text-3 {
+        align-items:baseline;
+    }
+
+
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="flex-box text-0">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                </p>
+        </div>
+        <div class="flex-box text-1 grow-1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="flex-box text-2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="flex-box text-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                </p>
+        </div>
+        <div class="flex-box text-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 5</title>
+</head>
+<style>
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 20vw auto;
+    }
+
+    .background-image {
+        background-image: url(/IMG/poesje.jpg);
+        background-size: contain;
+        width: 500px;
+        height: 500px; 
+        background-color: blue;
+        position:relative;      
+    }
+
+    .background-image::before{
+        content: "";
+        width: 500;
+        height: 500px;        
+    }
+
+    .overlay-image{
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: red;
+        animation-name: fade-in;
+        animation-duration: 6s;
+        animation-delay: 5s;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;    
+    }
+
+    @keyframes fade-in {
+        0% {background-color: rgba(255, 0, 0, 0);}
+       100% {background-color: rgba(255, 0, 0, 0.461);}
+
+    }
+
+    .box-2{
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        top: 0;
+        left: 0;
+        background-color: chocolate;
+        border: solid 5px black;  
+        animation: an-1;  
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        color:white;        
+    }
+
+    @keyframes an-1 {
+
+    0% {
+     top: 0;
+     left:0;
+     transform: rotate(0deg);
+    }
+    100% {
+     top:500px;
+     bottom: 0;
+     transform: rotate(180deg);
+    }
+    
+   }
+
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class=" box-1 background-image">
+            <div class="overlay-image"></div>
+            <div class="box-2"></div>
+        </div>
+
+        
+    </div>
+
+</body>
+
+</html>

@@ -104,9 +104,9 @@ nav a {
     }
   }
 
-  /* Opdracht 2*/
+  /* Opdracht 2 + 5*/
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
     .gallery-item .thumbnail {
     width: 95%;
     }
@@ -138,6 +138,7 @@ nav a {
 
   }
       
-  
+
+
 
   

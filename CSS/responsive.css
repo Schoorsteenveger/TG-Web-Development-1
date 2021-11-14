@@ -117,28 +117,46 @@ nav a {
   /* Pixel ratio of 1.5. Background-size is 1/1.5 = 66.67% (of a 150px image) */
 @media screen and (max-resolution: 150dpi){
     .logo { 
-    padding: 500px;
+    padding: 5px;
     }
 
 }
 /* Pixel ratio of 72dpi Background-size is 1/0.72 = 1.333% (of a 72px image) */
 @media only screen and (max-resolution: 72dpi){
     .logo { 
-    padding: 500px;
-}
+    padding: 5px;
+    }
 
 }
 
   /* Opdracht 4*/
 
-  @media screen and (min-resolution: 150dpi) and (max-width:480px){
+@media screen and (min-resolution: 150dpi) and (max-width:480px){
     .page-description {
-         font-size: 20px;
-      }
+    font-size: 20px;
+    }
 
   }
       
+  /* Opdracht 6*/
 
+@media (min-width: 768px) and (max-width: 1200px), (orientation: landscape) {
+    .main {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
 
+@media (max-width: 1200px){
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    main {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+}
 
   

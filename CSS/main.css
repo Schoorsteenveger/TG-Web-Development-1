@@ -17,7 +17,7 @@ h1 {
 
 .banner .slogan {
   position: absolute;
-  border: 4px solid black;
+  border: 4px solid #636363;
   top: 200px;
   left: 25%;
   width: 50%;
@@ -34,7 +34,7 @@ h1 {
 .container .icon {
   display: inline-block;
   margin: 2%;
-  border: 4px solid black;
+  border: 4px solid #636363;
   font-size: 32px;
   height: 300px;
   width: 300px;
@@ -46,4 +46,5 @@ img {
 }
 
 /* Ampersand. Good for adding hover/focus states, parent selectors, and media queries. 
-Don't get to clustered by keep nesting intothe undend.*//*# sourceMappingURL=main.css.map */
+Don't get to clustered by keep nesting intothe undend.*/
+/*# sourceMappingURL=main.css.map */

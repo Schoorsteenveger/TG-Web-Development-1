@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 2.2 String Methods/slice & substring</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+
+    <script>
+        let watTekst = 'Javascript is een onbekend bos. Vol uitdagingen.';
+
+        // a)Wat doet substring() als het eerste getal hoger is dan het tweede getal?
+        console.log(watTekst.substring(11,1)); // Output: Toont de eerste letters van de indexering: avascript 
+
+        // b) Wat doet slice() als het eerste getal hoger is dan het tweede getal?
+        console.log(watTekst.slice(11,1)); // Output: nada, doet niks?
+
+        // c) Wat doet substring() bij negatieve waardes?
+        console.log(watTekst.substring(-11,-1)); // // Output: nada, doet niks bij negatieve waarden?
+
+        // d) Wat doet slice() bij negatieve waardes?
+        console.log(watTekst.slice(-11,-1)); // Output: Toont laatste letters van de indexering: itdagingen
+        
+
+    </script>
+</body>
+</html>

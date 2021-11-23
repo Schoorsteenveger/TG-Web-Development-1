@@ -20,11 +20,13 @@
 }
 
 .box {
-    display: block;
-    height:200px;
+    display: flex;
+    height: 200px;
     width: 200px;
-    position:absolute;
+    position: absolute;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .box:hover {

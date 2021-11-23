@@ -10,10 +10,24 @@
     <h1>Hello World!</h1>
 
     <script>
-        let someKittens = "De poes van de buren heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
-        let chunk = someKittens.splice (0,1)
-        console.log (chunk)
-        console.log (someKittens)
+        let someKittens = 'De poes van de buren heeft kittens gehad! Hij vraagt of wij nog kittens willen.';
+        const someKittens1 = someKittens.split('!');
+        const zinEen = someKittens1[0];
+        const zinTwee = someKittens1[1];
+
+        console.log(someKittens1);
+        console.log(zinEen);
+        console.log(zinTwee);
+        console.log (someKittens.toUpperCase());
+        console.log (someKittens1.indexOf('KITTENS'));
+        console.log(someKittens1.lastIndexOf('KITTENS'));
+        console.log("The character at index -1   is '" + someKittens.charAt(0)   + "'");
+
+
+        // c. Output was -1 en -1;
+        // d; Output was D
+
+        // console.log(months);
     </script>
 </body>
 </html>

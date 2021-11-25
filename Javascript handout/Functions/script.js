@@ -18,6 +18,16 @@ element.onchange = function() {
 //     console.log(element.value)
 // }
 
-function add (x,y) {
-    return x + y;
+// Maak een functie met een parameter die deze in de console logt. Geef de ID variabele hier aan mee. Wat zie je in de console?
+let call = function(id){
+  let x = document.getElementById(id).value;
+  alert(x);
+  console.log(element.value);
 }
+
+// d  Geef je functie een return waarde, bijvoorbeeld de parameter * 2. 
+let number = 16;
+
+function calculate (number) {return (number * 2);}
+  console.log(calculate(number * 2));
+

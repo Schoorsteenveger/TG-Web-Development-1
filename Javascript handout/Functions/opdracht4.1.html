@@ -18,10 +18,11 @@
     .wrapper {
         background-color: cadetblue;
         width: 100%;
-        height: 400px;
+        height: 600px;
     }
 
-    .container, .container-1,
+    .container,
+    .container-1,
     .div-result {
         margin: 0 auto;
         padding: 50px;
@@ -44,8 +45,18 @@
         height: 70px;
         margin: 0 auto;
         border: solid cornflowerblue 5px;
-        border-radius: 15px;
-        background-color: rgb(255, 176, 5);
+        border-radius: 0;
+        background-color:  rgba(221, 221, 221, 0.8);
+        color: #2b2b2b;
+        border: 2px solid black;
+        box-shadow: inset 5px 5px 5px 2px #000000;
+    }
+
+    button:hover,
+    button:active {
+        color: #EBF5FF;
+        background-color: #25696a;
+        cursor: pointer;
     }
 
     .container-1 {
@@ -60,6 +71,13 @@
         font-weight: 900;
     }
 
+    @media screen and (max-width: 768px) {
+        .container-1{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     .input-name,
     btn-1 {
         width: 400px;
@@ -72,28 +90,36 @@
 </style>
 
 <body>
+
     <div class="wrapper">
-        <div class="container"></div>
+
         <!-- a) Button click functie met result Hello World -->
-        <button id="b1" onclick="pressButtonOne()">Button one</button>
-        <br>
-        <div class="div-result" id=result></div>
+        <div class="container">
+
+            <input type="button" value="Bestel hier">
+
+            <p>The machine is stopped.</p>
+            <br>
+            <button onclick="showAlert()">Hello World</button>
+        </div>
 
         <!-- b) input met id in variable van de functie -->
-        <input id="myInput" onchange="pressButtonTwo()">
+        <div class="container">
+            <input id="myInput" onchange="pressButtonTwo()">
+        </div>
 
-    <!-- c) Maak een functie met een parameter die deze in de console logt. Geef de ID variabele hier aan mee. Wat zie je in de console?-->
     </div>
 
+    <!-- c) Maak een functie met een parameter die deze in de console logt. Geef de ID variabele hier aan mee. Wat zie je in de console?-->
     <div class="container-1">
-        
+
         <h2>Functie met parameter</h2>
         <input class="input-name" type="text" id="name">
         <input class="btn-1" type="button" onclick="call(document.getElementById('name').id)" value="Click me">
     </div>
 
-     <!-- d) Maak een functie met een parameter die deze in de console logt. Geef de ID variabele hier aan mee. Wat zie je in de console?-->
-    <script src="script.js"></script>
+    <!-- d) Maak een functie met een parameter die deze in de console logt. Geef de ID variabele hier aan mee. Wat zie je in de console?-->
+    <script src="./script.js"></script>
 </body>
 
 </html>

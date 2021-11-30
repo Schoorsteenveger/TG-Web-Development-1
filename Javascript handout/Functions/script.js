@@ -1,33 +1,83 @@
-// a Button met output hello world
-function hello () {
-    document.getElementById('result').innerHTML = 'Hello World!';
+// a-1 Button met output hello world
+const button = document.querySelector('input');
+const paragraph = document.querySelector('p');
+
+button.addEventListener('click', updateButton);
+
+function updateButton() {
+  if (button.value === 'Bestel hier') {
+    button.value = 'Dank!';
+    paragraph.textContent = 'Bestelling geplaatst!';
+  } else {
+    button.value = 'Bestel hier';
+    paragraph.textContent = 'Nog een keer?';
+  }
 }
 
-document.getElementById('b1').addEventListener('click', hello);
-
-// b input element. variabele myInput aangemaakt.
-let element = document.getElementById("myInput");
-element.onchange = function() {
-  console.log(element.value);
+// a-2 Button alert hello world
+const hello = "Hello World!"
+function showAlert() {
+  alert (hello);
+  console.log(hello);
 }
 
-// c function with parameters
+  // b input element. variabele myInput aangemaakt.
+  const element = document.getElementById("myInput");
+  element.onchange = function () {
+    console.log(element);
+  }
 
-// let element = document.getElementById ('myInput');
-// element.onchange = function() {
-//     console.log(element.value)
-// }
+  // c function with parameters
 
-// Maak een functie met een parameter die deze in de console logt. Geef de ID variabele hier aan mee. Wat zie je in de console?
-let call = function(id){
-  let x = document.getElementById(id).value;
-  alert(x);
-  console.log(element.value);
-}
+  /*const element = document.getElementById('myInput');
+  element.onchange = function () {
+    console.log(element.value)
+  } */
 
-// d  Geef je functie een return waarde, bijvoorbeeld de parameter * 2. 
-let number = 16;
+  // Maak een functie met een parameter die deze in de console logt. Geef de ID variabele hier aan mee. Wat zie je in de console?
+  /*constcall = function (id) {
+    const x = document.getElementById(id).value;
+    alert(x);
+    console.log(element.value);
+  }*/
 
-function calculate (number) {return (number * 2);}
-  console.log(calculate(number * 2));
+  // d  Geef je functie een return waarde, bijvoorbeeld de parameter * 2. 
+  /*let number = 16;
 
+  function calculate(number) { return (number * 2); }
+  console.log(calculate(number * 2));*/
+
+
+  // //a  4.2  DOM methods 
+  // getElementsByClassName
+
+  // document.getElementsByClassName
+
+  // function count() {
+  //     let count = document.getElementById("divElements");
+  //     getElementsByClassName("container-text");
+  //     document.getElementById("showText").innerHTML = "Totaal:" + count.children.length;
+
+  // }
+
+  // // document.getElementsByTagName
+
+  const pElements = document.getElementsByTagName("p");
+  console.log(pElements)
+  console.log(pElements[0])
+
+  function colorChange(paragraphs, number, color) {
+    paragraphs[number].style.color = color;
+
+  }
+
+  function changeallColors(paragraphs, color) {
+    for (let index = 0; index < paragraphs.length - 1; index++) {
+      paragraphs[index].style.color = color;
+    }
+  }
+
+  // document.querySelector
+  // document.querySelectorAll
+  // element.innerHTML
+  // element.innerText

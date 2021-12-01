@@ -61,10 +61,10 @@ function showAlert() {
   // }
 
   // // document.getElementsByTagName
-
+  
   const pElements = document.getElementsByTagName("p");
-  console.log(pElements)
-  console.log(pElements[0])
+  console.log(pElements);
+  // console.log(pElements[0]);
 
   function colorChange(paragraphs, number, color) {
     paragraphs[number].style.color = color;

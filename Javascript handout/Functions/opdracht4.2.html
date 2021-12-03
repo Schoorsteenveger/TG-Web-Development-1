@@ -12,7 +12,7 @@
     .wrapper {
         background-color: cadetblue;
         width: 100%;
-        height: 600px;
+        height: auto;
         display: flex;
     }
 
@@ -35,18 +35,45 @@
         display: block;
         width: 400px;
         height: 70px;
-        margin: 0 auto;
-        border: solid rgb(85, 85, 85) 5px;
-        background-color: rgb(160, 160, 160);
+        margin: 15px auto;
+        border: solid rgb(221, 255, 0) 5px;
+        background-color: rgb(255, 253, 188);
+        cursor: pointer;
+    }
+
+    button:hover,
+    button:focus {
+        box-shadow: rgba(0, 0, 0, 0.1) 0 2px 8px;
+        cursor: pointer;
+        transition: 3s;
+    }
+
+    .container-list ul li {
+        padding: 15px 20px;
+        font-size: 35px;
+    }
+
+    .container-list ul li:hover {
+        cursor: pointer;
+        background-color: blue;
+        color: rgb(255, 255, 255);
+
     }
 </style>
 
 <body>
 
     <div class="wrapper">
-        <div class="container-text" id="divElements">
+        <div class="container-text all-elements" id="divElements">
             <h2>H2</h2>
-            <p class="text">
+            <p class="text pClassName">
+                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+
+            <h2>H2</h2>
+            <p class="text ">
                 Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
                 and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
                 evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
@@ -58,24 +85,41 @@
                 and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
                 evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
             </p>
+            <div class="container-list">
+                <h2>Klik op de lijst om de inner html aan te passen.</h2>
+                <ul id="list" onclick="clickFunction()">
+                    <li>Een</li>
+                    <li>Twee</li>
+                    <li>Drie</li>
+                </ul>
+            </div>
 
-            <h2>H2</h2>
-            <p class="text">
-                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
-                and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
-                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            </p>
 
+            <!--4.2. i) Get elements by classname-->
+            <!--ii)document.getElementsByTagName -->
+            <!--iii)document.querySelector -->
+            <!--iv)document.querySelectorAll -->
+            <!--v)element.innerHTML -->
+            <!--v)element.innerText -->
+            <div class="container">
+                <button onclick="changeElements">Change on classname</button>
 
+                <button onclick="counth2()">Count h2</button>
+                <p id="showH2"></p>
+                <br>
+                <button onclick="colorChange()">Change to red</button>
+                <br>
+                <button onclick="Change()">Change all to blue</button>
+                <br>
+                <button id="btn-text" onclick="ShowInnerText()">Inner text</button>
+                <p id="showText"></p>
+            </div>
 
-            <!--4.2. ii) Get elements by tagname-->
-
-            <button onclick="changeallColors(pElements,'blue')">Click</button </div>
         </div>
 
 
 
-        <script src="script.js"></script>
+        <script src="./script.js"></script>
 </body>
 
 </html>

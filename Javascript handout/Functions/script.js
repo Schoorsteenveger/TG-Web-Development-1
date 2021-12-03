@@ -1,6 +1,5 @@
-"use strict";
 // a-1 Button met output hello world
-const button = document.querySelector("input");
+/*const button = document.querySelector("input");
 const paragraph = document.querySelector("p");
 
 button.addEventListener("click", updateButton);
@@ -14,22 +13,23 @@ function updateButton() {
     paragraph.textContent = "Nog een keer?";
   }
 }
-
+*/
 // a-2 Button alert hello world
+/*
 const hello = "Hello World!";
 function showAlert() {
   alert(hello);
   console.log(hello);
 }
-
+*/
 // b input element. Variabele myInput aangemaakt.
-const text = document.getElementById("myInput").value;
+/*const text = document.getElementById("myInput").value;
 
 function InputText() {
   const text = document.getElementById("myInput").value;
   document.getElementById("resultaat").innerText = "Dit is je input:" + text;
 }
-
+*/
 // c function with parameters
 
 /*const element = document.getElementById('myInput');
@@ -38,60 +38,64 @@ element.onchange = function () {
 } */
 
 // d  Maak een functie met een parameter die deze in de console logt. Geef de ID variabele hier aan mee. Wat zie je in de console?
-function pickNumber(number) {
+/*function pickNumber(number) {
   return number * 2;
 }
 const result = pickNumber(5);
 document.getElementById("resultNumber").innerText =
   "Dit is je nummer:" + result; // buiten de functie.
-console.log(result);
-
-/* Andere probeersels
-// function pickNumber() {
-//   const result = document.getElementById("numberInput").value;
-//   // document.getElementById("result").innerText = "Dit is je nummer:" + pickNumber;
-//   return result * 2;
-//   console.log(result);
-// }
-// console.log(pickNumber());
-
-/* Andere probeersels
-// const number = 16;
+console.log(result); // nog placeholer input bewerken.
 
 // function calculate(number) {
 //   return number * 2;
 // }
 // console.log(calculate(number));
+*/
+// a  4.2  DOM methods
 
-// //a  4.2  DOM methods
-// getElementsByClassName
+// i) getElementsByClassName
 
-// document.getElementsByClassName
+const pClassName = document.getElementsByClassName(".pClassName");
+console.log(pClassName);
 
-// function count() {
-//     let count = document.getElementById("divElements");
-//     getElementsByClassName("container-text");
-//     document.getElementById("showText").innerHTML = "Totaal:" + count.children.length;
+function changeElements() {
+  document.querySelector(".pClassName").style.color = "blue";
 
-// }
-
-// // document.getElementsByTagName
-
-const pElements = document.getElementsByTagName("p");
-console.log(pElements);
-// console.log(pElements[0]);
-
-function colorChange(paragraphs, number, color) {
-  paragraphs[number].style.color = color;
+  console.log(changeElements);
 }
 
-function changeallColors(paragraphs, color) {
-  for (let index = 0; index < paragraphs.length - 1; index++) {
-    paragraphs[index].style.color = color;
-  }
+const totalh2 = document.getElementsByTagName("h2");
+
+// ii) document.getElementsByTagName alert("total h2 tags are: " + totalh2.length);
+
+document.getElementById("showH2").innerHTML = "Aantal h2 = " + totalh2.length
+console.log(totalh2);
+console.log(showH2);
+
+// iii) document.querySelector
+
+const text = document.querySelector("text");
+function colorChange() {
+  document.querySelector(".text").style.backgroundColor = "red";
 }
 
-// document.querySelector
-// document.querySelectorAll
-// element.innerHTML
-// element.innerText
+// iv)document.querySelectorAll
+
+const allText = document.querySelectorAll("all-elements");
+function Change() {
+  document.querySelector(".all-elements").style.backgroundColor = "blue";
+}
+
+// v)element.innerHTML
+function clickFunction() {
+  document.getElementById("list").innerHTML = "Zo, aangepast";
+}
+
+// v)element.innerText
+
+
+
+function ShowInnerText() {
+  const x = document.getElementById("btn-text").innerText;
+  document.getElementById("showText").innerHTML = " Het werkt vandaag.";
+}

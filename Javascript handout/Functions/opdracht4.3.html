@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 4.3. Mathfloor</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .wrapper {
+        background-color: cadetblue;
+        width: 100%;
+        height: 600px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container,
+    .container-1,
+    .div-result {
+        margin: 0 auto;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .container,
+    .div-result,
+    button,
+    input {
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    button {
+        align-items: center;
+        background-color: black;
+        background-image: linear-gradient(#464d55, #25292e);
+        border-radius: 8px;
+        border-width: 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05);
+        color: #fff;
+        cursor: pointer;
+        padding: 7px 40px;
+    }
+
+    button:hover,
+    button:focus,
+    button:active {
+        box-shadow: rgba(0, 0, 0, 0.1) 0 2px 8px;
+        cursor: pointer;
+    }
+
+    input {
+        display: block;
+        width: 400px;
+        height: 70px;
+        margin: 0 auto;
+        border: solid cornflowerblue 5px;
+        background-color: rgba(221, 221, 221);
+        color: #2b2b2b;
+        border: 2px solid black;
+        box-shadow: inset 3px 3px #0000001d;
+    }
+
+    .input-box {
+        display: block;
+        width: 400px;
+        height: 70px;
+        margin: 0 auto;
+        background-color: coral;
+    }
+
+    .container-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blanchedalmond;
+        text-align: center;
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        gap: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .container-1 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .input-name,
+    btn-1 {
+        width: 400px;
+        height: 70px;
+        margin: 0 auto;
+        border: solid rgb(0, 0, 0) 5px;
+        border-radius: 15px;
+        background-color: rgb(184, 183, 183);
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <!-- 4.3.a  Math random function -->
+        <button id="demo" onclick="randomNumber()">Random Number</button>
+        <p>Geeft decimaal tussen 0 en 1. Liefst afronden met Math.floor.</p>
+        <p id="demo"></p>
+        <br>
+        <!-- b) parameter * Math floor -->
+        <button id="demo" onclick="randomNumber1()">Mathfloor parameter</button>
+        <p>De output wordt niet hoger dan het getal dat je hebt ingegeven.</p>
+        <p id="demo"></p>
+        <!-- c) parameter * Math.min/ Math.Max -->
+    </div>
+</body>
+<script src="./opdracht4.3.js"></script>
+
+</html>

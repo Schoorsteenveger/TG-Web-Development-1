@@ -1,8 +1,9 @@
 //d Naam met functie naam herkennen
 // A.
+
+
 function KiesNaam() {
-    let KiesNaam = document.getElementById("name-input").value;
-    const text = ("");
+    let namen = document.getElementById("name-input").value;
     // Als de naam Roibin is:
     if (naam === "Roibin" || naam === "Wesley" || naam === "Bianca" || naam === "Janou") {
         text + "Ja, die zit ook in het groepje";

@@ -10,16 +10,37 @@ console.log(dutchSports);
 // c Maak een nieuw array ballSports, met de balsporten uit dutchSports
 let ballSports = ["Voetbal", "Volleybal"];
 console.log(ballSports);
-// d Verwijder die items uit dutchSports.
-const removeItems = dutchSports - ballSports{
-    return(dutchSports);
-}
-console.log(dutchSports);
 
-// const newLocal = removeItems([0], [5]); // 
-// console.log(removeItems([0], [5]));
-// console.log(newLocal);
-// for (let number = 1; number < 50; number++) {
+// d Verwijder die items uit dutchSports.
+
+dutchSports.slice("Voetbal", "Volleybal");
+console.log(ballSports);
+
+// dutchSports.includes(1, 4);
+// console.log(dutchSports.includes(1, 4));
+
+dutchSports.length;
+console.log(dutchSports.length);
+
+dutchSports.pop();
+console.log(dutchSports.pop());
+
 //e Sorteer het dutchSports array.
+dutchSports.sort();
+console.log(dutchSports.sort());
+
 // f Log elk item in de console.
+dutchSports.forEach(function (item, index) {
+    console.log(item, index)
+})
+
+ballSports.forEach(function (item, index) {
+    console.log(item, index)
+})
 // g Maak een nieuw array sportsLength, met daarin de lengte van elk item in het dutchSports array.
+const sportsLenght = [];
+sportsLenght.length = 4;
+sportsLenght.push(dutchSports);
+console.log(sportsLenght.push(dutchSports));
+console.log(sportsLenght);
+// sportsLenght.from(dutchSports);
